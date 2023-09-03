@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		419FFE482AA4A149003FFCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE472AA4A149003FFCF4 /* AppDelegate.swift */; };
+		419FFE4A2AA4A149003FFCF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE492AA4A149003FFCF4 /* SceneDelegate.swift */; };
+		419FFE4D2AA4A149003FFCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE4B2AA4A149003FFCF4 /* LaunchScreen.storyboard */; };
+		419FFE502AA4A149003FFCF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE4E2AA4A149003FFCF4 /* Main.storyboard */; };
+		419FFE592AA4A149003FFCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE582AA4A149003FFCF4 /* AppDelegate.swift */; };
+		419FFE5C2AA4A149003FFCF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE5A2AA4A149003FFCF4 /* Main.storyboard */; };
+		419FFE632AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 419FFE622AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		419FFE6D2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 419FFE6C2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		419FFE732AA4A149003FFCF4 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE2E2AA4A141003FFCF4 /* Main.html */; };
+		419FFE742AA4A149003FFCF4 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE2E2AA4A141003FFCF4 /* Main.html */; };
+		419FFE752AA4A149003FFCF4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE302AA4A141003FFCF4 /* Icon.png */; };
+		419FFE762AA4A149003FFCF4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE302AA4A141003FFCF4 /* Icon.png */; };
+		419FFE772AA4A149003FFCF4 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE312AA4A141003FFCF4 /* Style.css */; };
+		419FFE782AA4A149003FFCF4 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE312AA4A141003FFCF4 /* Style.css */; };
+		419FFE792AA4A149003FFCF4 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE322AA4A141003FFCF4 /* Script.js */; };
+		419FFE7A2AA4A149003FFCF4 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE322AA4A141003FFCF4 /* Script.js */; };
+		419FFE7B2AA4A149003FFCF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE332AA4A141003FFCF4 /* ViewController.swift */; };
+		419FFE7C2AA4A149003FFCF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE332AA4A141003FFCF4 /* ViewController.swift */; };
+		419FFE7D2AA4A149003FFCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE342AA4A149003FFCF4 /* Assets.xcassets */; };
+		419FFE7E2AA4A149003FFCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE342AA4A149003FFCF4 /* Assets.xcassets */; };
+		419FFE7F2AA4A149003FFCF4 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE362AA4A149003FFCF4 /* SafariWebExtensionHandler.swift */; };
+		419FFE802AA4A149003FFCF4 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE362AA4A149003FFCF4 /* SafariWebExtensionHandler.swift */; };
+		419FFE812AA4A149003FFCF4 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE382AA4A149003FFCF4 /* _locales */; };
+		419FFE822AA4A149003FFCF4 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE382AA4A149003FFCF4 /* _locales */; };
+		419FFE832AA4A149003FFCF4 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE392AA4A149003FFCF4 /* images */; };
+		419FFE842AA4A149003FFCF4 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE392AA4A149003FFCF4 /* images */; };
+		419FFE852AA4A149003FFCF4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3A2AA4A149003FFCF4 /* manifest.json */; };
+		419FFE862AA4A149003FFCF4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3A2AA4A149003FFCF4 /* manifest.json */; };
+		419FFE872AA4A149003FFCF4 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3B2AA4A149003FFCF4 /* background.js */; };
+		419FFE882AA4A149003FFCF4 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3B2AA4A149003FFCF4 /* background.js */; };
+		419FFE892AA4A149003FFCF4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3C2AA4A149003FFCF4 /* content.js */; };
+		419FFE8A2AA4A149003FFCF4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3C2AA4A149003FFCF4 /* content.js */; };
+		419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3D2AA4A149003FFCF4 /* popup.html */; };
+		419FFE8C2AA4A149003FFCF4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3D2AA4A149003FFCF4 /* popup.html */; };
+		419FFE8D2AA4A149003FFCF4 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3E2AA4A149003FFCF4 /* popup.css */; };
+		419FFE8E2AA4A149003FFCF4 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3E2AA4A149003FFCF4 /* popup.css */; };
+		419FFE8F2AA4A149003FFCF4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3F2AA4A149003FFCF4 /* popup.js */; };
+		419FFE902AA4A149003FFCF4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3F2AA4A149003FFCF4 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		419FFE642AA4A149003FFCF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 419FFE282AA4A141003FFCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 419FFE612AA4A149003FFCF4;
+			remoteInfo = "Simple Debugging Tools for Web Extension (iOS)";
+		};
+		419FFE6E2AA4A149003FFCF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 419FFE282AA4A141003FFCF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 419FFE6B2AA4A149003FFCF4;
+			remoteInfo = "Simple Debugging Tools for Web Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		419FFE962AA4A149003FFCF4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				419FFE632AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE9D2AA4A149003FFCF4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				419FFE6D2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		419FFE2F2AA4A141003FFCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		419FFE302AA4A141003FFCF4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		419FFE312AA4A141003FFCF4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		419FFE322AA4A141003FFCF4 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		419FFE332AA4A141003FFCF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		419FFE342AA4A149003FFCF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		419FFE362AA4A149003FFCF4 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		419FFE382AA4A149003FFCF4 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		419FFE392AA4A149003FFCF4 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		419FFE3A2AA4A149003FFCF4 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		419FFE3B2AA4A149003FFCF4 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		419FFE3C2AA4A149003FFCF4 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		419FFE3D2AA4A149003FFCF4 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		419FFE3E2AA4A149003FFCF4 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		419FFE3F2AA4A149003FFCF4 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		419FFE442AA4A149003FFCF4 /* Simple Debugging Tools for Web.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Debugging Tools for Web.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		419FFE472AA4A149003FFCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		419FFE492AA4A149003FFCF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		419FFE4C2AA4A149003FFCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		419FFE4F2AA4A149003FFCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		419FFE512AA4A149003FFCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419FFE562AA4A149003FFCF4 /* Simple Debugging Tools for Web.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Debugging Tools for Web.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		419FFE582AA4A149003FFCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		419FFE5B2AA4A149003FFCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		419FFE5D2AA4A149003FFCF4 /* Simple Debugging Tools for Web.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simple Debugging Tools for Web.entitlements"; sourceTree = "<group>"; };
+		419FFE622AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Debugging Tools for Web Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		419FFE672AA4A149003FFCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419FFE6C2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Debugging Tools for Web Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		419FFE712AA4A149003FFCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419FFE722AA4A149003FFCF4 /* Simple Debugging Tools for Web.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simple Debugging Tools for Web.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		419FFE412AA4A149003FFCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE532AA4A149003FFCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE5F2AA4A149003FFCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE692AA4A149003FFCF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		419FFE272AA4A141003FFCF4 = {
+			isa = PBXGroup;
+			children = (
+				419FFE2C2AA4A141003FFCF4 /* Shared (App) */,
+				419FFE352AA4A149003FFCF4 /* Shared (Extension) */,
+				419FFE462AA4A149003FFCF4 /* iOS (App) */,
+				419FFE572AA4A149003FFCF4 /* macOS (App) */,
+				419FFE662AA4A149003FFCF4 /* iOS (Extension) */,
+				419FFE702AA4A149003FFCF4 /* macOS (Extension) */,
+				419FFE452AA4A149003FFCF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		419FFE2C2AA4A141003FFCF4 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE332AA4A141003FFCF4 /* ViewController.swift */,
+				419FFE342AA4A149003FFCF4 /* Assets.xcassets */,
+				419FFE2D2AA4A141003FFCF4 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		419FFE2D2AA4A141003FFCF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE2E2AA4A141003FFCF4 /* Main.html */,
+				419FFE302AA4A141003FFCF4 /* Icon.png */,
+				419FFE312AA4A141003FFCF4 /* Style.css */,
+				419FFE322AA4A141003FFCF4 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		419FFE352AA4A149003FFCF4 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE362AA4A149003FFCF4 /* SafariWebExtensionHandler.swift */,
+				419FFE372AA4A149003FFCF4 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		419FFE372AA4A149003FFCF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE382AA4A149003FFCF4 /* _locales */,
+				419FFE392AA4A149003FFCF4 /* images */,
+				419FFE3A2AA4A149003FFCF4 /* manifest.json */,
+				419FFE3B2AA4A149003FFCF4 /* background.js */,
+				419FFE3C2AA4A149003FFCF4 /* content.js */,
+				419FFE3D2AA4A149003FFCF4 /* popup.html */,
+				419FFE3E2AA4A149003FFCF4 /* popup.css */,
+				419FFE3F2AA4A149003FFCF4 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		419FFE452AA4A149003FFCF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE442AA4A149003FFCF4 /* Simple Debugging Tools for Web.app */,
+				419FFE562AA4A149003FFCF4 /* Simple Debugging Tools for Web.app */,
+				419FFE622AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */,
+				419FFE6C2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		419FFE462AA4A149003FFCF4 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE472AA4A149003FFCF4 /* AppDelegate.swift */,
+				419FFE492AA4A149003FFCF4 /* SceneDelegate.swift */,
+				419FFE4B2AA4A149003FFCF4 /* LaunchScreen.storyboard */,
+				419FFE4E2AA4A149003FFCF4 /* Main.storyboard */,
+				419FFE512AA4A149003FFCF4 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		419FFE572AA4A149003FFCF4 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE582AA4A149003FFCF4 /* AppDelegate.swift */,
+				419FFE5A2AA4A149003FFCF4 /* Main.storyboard */,
+				419FFE5D2AA4A149003FFCF4 /* Simple Debugging Tools for Web.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		419FFE662AA4A149003FFCF4 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE672AA4A149003FFCF4 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		419FFE702AA4A149003FFCF4 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				419FFE712AA4A149003FFCF4 /* Info.plist */,
+				419FFE722AA4A149003FFCF4 /* Simple Debugging Tools for Web.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		419FFE432AA4A149003FFCF4 /* Simple Debugging Tools for Web (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419FFE972AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web (iOS)" */;
+			buildPhases = (
+				419FFE402AA4A149003FFCF4 /* Sources */,
+				419FFE412AA4A149003FFCF4 /* Frameworks */,
+				419FFE422AA4A149003FFCF4 /* Resources */,
+				419FFE962AA4A149003FFCF4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				419FFE652AA4A149003FFCF4 /* PBXTargetDependency */,
+			);
+			name = "Simple Debugging Tools for Web (iOS)";
+			productName = "Simple Debugging Tools for Web (iOS)";
+			productReference = 419FFE442AA4A149003FFCF4 /* Simple Debugging Tools for Web.app */;
+			productType = "com.apple.product-type.application";
+		};
+		419FFE552AA4A149003FFCF4 /* Simple Debugging Tools for Web (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419FFE9E2AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web (macOS)" */;
+			buildPhases = (
+				419FFE522AA4A149003FFCF4 /* Sources */,
+				419FFE532AA4A149003FFCF4 /* Frameworks */,
+				419FFE542AA4A149003FFCF4 /* Resources */,
+				419FFE9D2AA4A149003FFCF4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				419FFE6F2AA4A149003FFCF4 /* PBXTargetDependency */,
+			);
+			name = "Simple Debugging Tools for Web (macOS)";
+			productName = "Simple Debugging Tools for Web (macOS)";
+			productReference = 419FFE562AA4A149003FFCF4 /* Simple Debugging Tools for Web.app */;
+			productType = "com.apple.product-type.application";
+		};
+		419FFE612AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419FFE932AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web Extension (iOS)" */;
+			buildPhases = (
+				419FFE5E2AA4A149003FFCF4 /* Sources */,
+				419FFE5F2AA4A149003FFCF4 /* Frameworks */,
+				419FFE602AA4A149003FFCF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Debugging Tools for Web Extension (iOS)";
+			productName = "Simple Debugging Tools for Web Extension (iOS)";
+			productReference = 419FFE622AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		419FFE6B2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419FFE9A2AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web Extension (macOS)" */;
+			buildPhases = (
+				419FFE682AA4A149003FFCF4 /* Sources */,
+				419FFE692AA4A149003FFCF4 /* Frameworks */,
+				419FFE6A2AA4A149003FFCF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Debugging Tools for Web Extension (macOS)";
+			productName = "Simple Debugging Tools for Web Extension (macOS)";
+			productReference = 419FFE6C2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		419FFE282AA4A141003FFCF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					419FFE432AA4A149003FFCF4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					419FFE552AA4A149003FFCF4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					419FFE612AA4A149003FFCF4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					419FFE6B2AA4A149003FFCF4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 419FFE2B2AA4A141003FFCF4 /* Build configuration list for PBXProject "Simple Debugging Tools for Web" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 419FFE272AA4A141003FFCF4;
+			productRefGroup = 419FFE452AA4A149003FFCF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				419FFE432AA4A149003FFCF4 /* Simple Debugging Tools for Web (iOS) */,
+				419FFE552AA4A149003FFCF4 /* Simple Debugging Tools for Web (macOS) */,
+				419FFE612AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension (iOS) */,
+				419FFE6B2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		419FFE422AA4A149003FFCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE752AA4A149003FFCF4 /* Icon.png in Resources */,
+				419FFE4D2AA4A149003FFCF4 /* LaunchScreen.storyboard in Resources */,
+				419FFE732AA4A149003FFCF4 /* Main.html in Resources */,
+				419FFE792AA4A149003FFCF4 /* Script.js in Resources */,
+				419FFE7D2AA4A149003FFCF4 /* Assets.xcassets in Resources */,
+				419FFE502AA4A149003FFCF4 /* Main.storyboard in Resources */,
+				419FFE772AA4A149003FFCF4 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE542AA4A149003FFCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE762AA4A149003FFCF4 /* Icon.png in Resources */,
+				419FFE782AA4A149003FFCF4 /* Style.css in Resources */,
+				419FFE5C2AA4A149003FFCF4 /* Main.storyboard in Resources */,
+				419FFE7A2AA4A149003FFCF4 /* Script.js in Resources */,
+				419FFE7E2AA4A149003FFCF4 /* Assets.xcassets in Resources */,
+				419FFE742AA4A149003FFCF4 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE602AA4A149003FFCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE872AA4A149003FFCF4 /* background.js in Resources */,
+				419FFE8D2AA4A149003FFCF4 /* popup.css in Resources */,
+				419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */,
+				419FFE832AA4A149003FFCF4 /* images in Resources */,
+				419FFE852AA4A149003FFCF4 /* manifest.json in Resources */,
+				419FFE812AA4A149003FFCF4 /* _locales in Resources */,
+				419FFE892AA4A149003FFCF4 /* content.js in Resources */,
+				419FFE8F2AA4A149003FFCF4 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE6A2AA4A149003FFCF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE882AA4A149003FFCF4 /* background.js in Resources */,
+				419FFE8E2AA4A149003FFCF4 /* popup.css in Resources */,
+				419FFE8C2AA4A149003FFCF4 /* popup.html in Resources */,
+				419FFE842AA4A149003FFCF4 /* images in Resources */,
+				419FFE862AA4A149003FFCF4 /* manifest.json in Resources */,
+				419FFE822AA4A149003FFCF4 /* _locales in Resources */,
+				419FFE8A2AA4A149003FFCF4 /* content.js in Resources */,
+				419FFE902AA4A149003FFCF4 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		419FFE402AA4A149003FFCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE7B2AA4A149003FFCF4 /* ViewController.swift in Sources */,
+				419FFE482AA4A149003FFCF4 /* AppDelegate.swift in Sources */,
+				419FFE4A2AA4A149003FFCF4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE522AA4A149003FFCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE7C2AA4A149003FFCF4 /* ViewController.swift in Sources */,
+				419FFE592AA4A149003FFCF4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE5E2AA4A149003FFCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE7F2AA4A149003FFCF4 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		419FFE682AA4A149003FFCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419FFE802AA4A149003FFCF4 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		419FFE652AA4A149003FFCF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 419FFE612AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension (iOS) */;
+			targetProxy = 419FFE642AA4A149003FFCF4 /* PBXContainerItemProxy */;
+		};
+		419FFE6F2AA4A149003FFCF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 419FFE6B2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension (macOS) */;
+			targetProxy = 419FFE6E2AA4A149003FFCF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		419FFE2E2AA4A141003FFCF4 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				419FFE2F2AA4A141003FFCF4 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		419FFE4B2AA4A149003FFCF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				419FFE4C2AA4A149003FFCF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		419FFE4E2AA4A149003FFCF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				419FFE4F2AA4A149003FFCF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		419FFE5A2AA4A149003FFCF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				419FFE5B2AA4A149003FFCF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		419FFE912AA4A149003FFCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		419FFE922AA4A149003FFCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		419FFE942AA4A149003FFCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		419FFE952AA4A149003FFCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		419FFE982AA4A149003FFCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web";
+				PRODUCT_NAME = "Simple Debugging Tools for Web";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		419FFE992AA4A149003FFCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web";
+				PRODUCT_NAME = "Simple Debugging Tools for Web";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		419FFE9B2AA4A149003FFCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Simple Debugging Tools for Web.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		419FFE9C2AA4A149003FFCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Simple Debugging Tools for Web.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		419FFE9F2AA4A149003FFCF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Simple Debugging Tools for Web.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web";
+				PRODUCT_NAME = "Simple Debugging Tools for Web";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		419FFEA02AA4A149003FFCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Simple Debugging Tools for Web.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4658MT52J8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web";
+				PRODUCT_NAME = "Simple Debugging Tools for Web";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		419FFE2B2AA4A141003FFCF4 /* Build configuration list for PBXProject "Simple Debugging Tools for Web" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419FFE912AA4A149003FFCF4 /* Debug */,
+				419FFE922AA4A149003FFCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419FFE932AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419FFE942AA4A149003FFCF4 /* Debug */,
+				419FFE952AA4A149003FFCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419FFE972AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419FFE982AA4A149003FFCF4 /* Debug */,
+				419FFE992AA4A149003FFCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419FFE9A2AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419FFE9B2AA4A149003FFCF4 /* Debug */,
+				419FFE9C2AA4A149003FFCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419FFE9E2AA4A149003FFCF4 /* Build configuration list for PBXNativeTarget "Simple Debugging Tools for Web (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				419FFE9F2AA4A149003FFCF4 /* Debug */,
+				419FFEA02AA4A149003FFCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 419FFE282AA4A141003FFCF4 /* Project object */;
+}
