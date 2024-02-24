@@ -35,8 +35,6 @@
 		419FFE842AA4A149003FFCF4 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE392AA4A149003FFCF4 /* images */; };
 		419FFE852AA4A149003FFCF4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3A2AA4A149003FFCF4 /* manifest.json */; };
 		419FFE862AA4A149003FFCF4 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3A2AA4A149003FFCF4 /* manifest.json */; };
-		419FFE872AA4A149003FFCF4 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3B2AA4A149003FFCF4 /* background.js */; };
-		419FFE882AA4A149003FFCF4 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3B2AA4A149003FFCF4 /* background.js */; };
 		419FFE892AA4A149003FFCF4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3C2AA4A149003FFCF4 /* content.js */; };
 		419FFE8A2AA4A149003FFCF4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3C2AA4A149003FFCF4 /* content.js */; };
 		419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3D2AA4A149003FFCF4 /* popup.html */; };
@@ -114,7 +112,6 @@
 		419FFE382AA4A149003FFCF4 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		419FFE392AA4A149003FFCF4 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		419FFE3A2AA4A149003FFCF4 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		419FFE3B2AA4A149003FFCF4 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
 		419FFE3C2AA4A149003FFCF4 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
 		419FFE3D2AA4A149003FFCF4 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		419FFE3E2AA4A149003FFCF4 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
@@ -228,7 +225,6 @@
 				419FFE382AA4A149003FFCF4 /* _locales */,
 				419FFE392AA4A149003FFCF4 /* images */,
 				419FFE3A2AA4A149003FFCF4 /* manifest.json */,
-				419FFE3B2AA4A149003FFCF4 /* background.js */,
 				419FFE3C2AA4A149003FFCF4 /* content.js */,
 				419FFE3D2AA4A149003FFCF4 /* popup.html */,
 				419FFE3E2AA4A149003FFCF4 /* popup.css */,
@@ -446,7 +442,6 @@
 				41EE55DA2B89DBA50034656A /* tailwind.css in Resources */,
 				41EE55D82B89DBA50034656A /* package-lock.json in Resources */,
 				41ADC7D52B8759E40058802A /* content.css in Resources */,
-				419FFE872AA4A149003FFCF4 /* background.js in Resources */,
 				41EE55D42B89DBA50034656A /* package.json in Resources */,
 				419FFE8D2AA4A149003FFCF4 /* popup.css in Resources */,
 				41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */,
@@ -467,7 +462,6 @@
 				41EE55DB2B89DBA50034656A /* tailwind.css in Resources */,
 				41EE55D92B89DBA50034656A /* package-lock.json in Resources */,
 				41ADC7D62B8759E40058802A /* content.css in Resources */,
-				419FFE882AA4A149003FFCF4 /* background.js in Resources */,
 				41EE55D52B89DBA50034656A /* package.json in Resources */,
 				419FFE8E2AA4A149003FFCF4 /* popup.css in Resources */,
 				41EE55D72B89DBA50034656A /* tailwind.config.js in Resources */,
