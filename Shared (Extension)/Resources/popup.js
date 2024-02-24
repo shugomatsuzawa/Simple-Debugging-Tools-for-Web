@@ -2,6 +2,8 @@ const alertEnable   = document.getElementById('alert_enable');
 const alertHostname = document.getElementById('alert_hostname');
 const alertSave     = document.getElementById('alert_save');
 
+const infoBtn       = document.getElementById('info_btn');
+
 // ポップアップ開いた時に設定内容表示
 browser.storage.local.get(['alertEnable', 'alertHostname'], function (result) {
     const savedAlertEnable      = result.alertEnable;
@@ -10,8 +12,8 @@ browser.storage.local.get(['alertEnable', 'alertHostname'], function (result) {
     alertHostname.value = savedAlertHostname;
 });
 
-// 保存ボタンクリック
 document.addEventListener('DOMContentLoaded', function () {
+    // 保存ボタンクリック
     alertSave.addEventListener('click', function () {
         // 入力されたURLをブラウザストレージに保存する
         const alertEnableValue      = alertEnable.checked;
@@ -31,5 +33,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.close();
             });
         });
+    });
+
+    // iボタンクリック
+    infoBtn.addEventListener('click', function () {
+        let createInfoData = {
+          url: "acknowledgements.html"
+        };
+        let creatingInfo = browser.tabs.create(createInfoData);
     });
 });

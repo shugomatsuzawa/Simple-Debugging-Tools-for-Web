@@ -57,6 +57,8 @@
 		41EE55D92B89DBA50034656A /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D22B89DBA50034656A /* package-lock.json */; };
 		41EE55DA2B89DBA50034656A /* tailwind.css in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D32B89DBA50034656A /* tailwind.css */; };
 		41EE55DB2B89DBA50034656A /* tailwind.css in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D32B89DBA50034656A /* tailwind.css */; };
+		41EE55DD2B8A5CE90034656A /* acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55DC2B8A5CE90034656A /* acknowledgements.html */; };
+		41EE55DE2B8A5CE90034656A /* acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55DC2B8A5CE90034656A /* acknowledgements.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,9 @@
 		41EE55D12B89DBA50034656A /* tailwind.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tailwind.config.js; sourceTree = "<group>"; };
 		41EE55D22B89DBA50034656A /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
 		41EE55D32B89DBA50034656A /* tailwind.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tailwind.css; sourceTree = "<group>"; };
+		41EE55DC2B8A5CE90034656A /* acknowledgements.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = acknowledgements.html; sourceTree = "<group>"; };
+		41EE55DF2B8A67200034656A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		41EE55E02B8A69E00034656A /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +179,8 @@
 		419FFE272AA4A141003FFCF4 = {
 			isa = PBXGroup;
 			children = (
+				41EE55E02B8A69E00034656A /* LICENCE */,
+				41EE55DF2B8A67200034656A /* README.md */,
 				41EE55CB2B89D5550034656A /* .gitignore */,
 				419FFE2C2AA4A141003FFCF4 /* Shared (App) */,
 				419FFE352AA4A149003FFCF4 /* Shared (Extension) */,
@@ -230,6 +237,7 @@
 				419FFE3E2AA4A149003FFCF4 /* popup.css */,
 				41ADC7D42B8759E40058802A /* content.css */,
 				419FFE3F2AA4A149003FFCF4 /* popup.js */,
+				41EE55DC2B8A5CE90034656A /* acknowledgements.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -447,6 +455,7 @@
 				41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */,
 				419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE832AA4A149003FFCF4 /* images in Resources */,
+				41EE55DD2B8A5CE90034656A /* acknowledgements.html in Resources */,
 				419FFE852AA4A149003FFCF4 /* manifest.json in Resources */,
 				419FFE812AA4A149003FFCF4 /* _locales in Resources */,
 				419FFE892AA4A149003FFCF4 /* content.js in Resources */,
@@ -467,6 +476,7 @@
 				41EE55D72B89DBA50034656A /* tailwind.config.js in Resources */,
 				419FFE8C2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE842AA4A149003FFCF4 /* images in Resources */,
+				41EE55DE2B8A5CE90034656A /* acknowledgements.html in Resources */,
 				419FFE862AA4A149003FFCF4 /* manifest.json in Resources */,
 				419FFE822AA4A149003FFCF4 /* _locales in Resources */,
 				419FFE8A2AA4A149003FFCF4 /* content.js in Resources */,
