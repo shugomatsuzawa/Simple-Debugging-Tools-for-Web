@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "default_locale": "en",
+    "default_locale": "ja",
 
     "name": "__MSG_extension_name__",
     "description": "__MSG_extension_description__",
@@ -20,7 +20,8 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "css": [ "content.css" ],
+        "matches": [ "*://*/*" ]
     }],
 
     "action": {
@@ -35,5 +36,8 @@
         }
     },
 
-    "permissions": [ ]
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
 }

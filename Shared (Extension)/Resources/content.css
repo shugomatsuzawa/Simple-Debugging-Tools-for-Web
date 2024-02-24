@@ -1,0 +1,24 @@
+:root {
+/*    color-scheme: light dark;*/
+}
+
+.sm-sdtfw-alert-elm {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 6px;
+    background: #FF3B30;
+    font-family: system-ui;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1;
+    color: #FFFFFF;
+    text-align: center;
+    z-index: calc(infinity);
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Dark Mode styles go here. */
+/*    background: #FF453A;*/
+}

@@ -45,6 +45,20 @@
 		419FFE8E2AA4A149003FFCF4 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3E2AA4A149003FFCF4 /* popup.css */; };
 		419FFE8F2AA4A149003FFCF4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3F2AA4A149003FFCF4 /* popup.js */; };
 		419FFE902AA4A149003FFCF4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3F2AA4A149003FFCF4 /* popup.js */; };
+		41ADC7D52B8759E40058802A /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 41ADC7D42B8759E40058802A /* content.css */; };
+		41ADC7D62B8759E40058802A /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 41ADC7D42B8759E40058802A /* content.css */; };
+		41EE55CC2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
+		41EE55CD2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
+		41EE55CE2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
+		41EE55CF2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
+		41EE55D42B89DBA50034656A /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D02B89DBA50034656A /* package.json */; };
+		41EE55D52B89DBA50034656A /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D02B89DBA50034656A /* package.json */; };
+		41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D12B89DBA50034656A /* tailwind.config.js */; };
+		41EE55D72B89DBA50034656A /* tailwind.config.js in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D12B89DBA50034656A /* tailwind.config.js */; };
+		41EE55D82B89DBA50034656A /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D22B89DBA50034656A /* package-lock.json */; };
+		41EE55D92B89DBA50034656A /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D22B89DBA50034656A /* package-lock.json */; };
+		41EE55DA2B89DBA50034656A /* tailwind.css in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D32B89DBA50034656A /* tailwind.css */; };
+		41EE55DB2B89DBA50034656A /* tailwind.css in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D32B89DBA50034656A /* tailwind.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +134,12 @@
 		419FFE6C2AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Debugging Tools for Web Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419FFE712AA4A149003FFCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419FFE722AA4A149003FFCF4 /* Simple Debugging Tools for Web.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simple Debugging Tools for Web.entitlements"; sourceTree = "<group>"; };
+		41ADC7D42B8759E40058802A /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
+		41EE55CB2B89D5550034656A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		41EE55D02B89DBA50034656A /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		41EE55D12B89DBA50034656A /* tailwind.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tailwind.config.js; sourceTree = "<group>"; };
+		41EE55D22B89DBA50034656A /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
+		41EE55D32B89DBA50034656A /* tailwind.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tailwind.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +177,7 @@
 		419FFE272AA4A141003FFCF4 = {
 			isa = PBXGroup;
 			children = (
+				41EE55CB2B89D5550034656A /* .gitignore */,
 				419FFE2C2AA4A141003FFCF4 /* Shared (App) */,
 				419FFE352AA4A149003FFCF4 /* Shared (Extension) */,
 				419FFE462AA4A149003FFCF4 /* iOS (App) */,
@@ -200,6 +221,10 @@
 		419FFE372AA4A149003FFCF4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				41EE55D22B89DBA50034656A /* package-lock.json */,
+				41EE55D02B89DBA50034656A /* package.json */,
+				41EE55D12B89DBA50034656A /* tailwind.config.js */,
+				41EE55D32B89DBA50034656A /* tailwind.css */,
 				419FFE382AA4A149003FFCF4 /* _locales */,
 				419FFE392AA4A149003FFCF4 /* images */,
 				419FFE3A2AA4A149003FFCF4 /* manifest.json */,
@@ -207,6 +232,7 @@
 				419FFE3C2AA4A149003FFCF4 /* content.js */,
 				419FFE3D2AA4A149003FFCF4 /* popup.html */,
 				419FFE3E2AA4A149003FFCF4 /* popup.css */,
+				41ADC7D42B8759E40058802A /* content.css */,
 				419FFE3F2AA4A149003FFCF4 /* popup.js */,
 			);
 			path = Resources;
@@ -387,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EE55CC2B89D5550034656A /* .gitignore in Resources */,
 				419FFE752AA4A149003FFCF4 /* Icon.png in Resources */,
 				419FFE4D2AA4A149003FFCF4 /* LaunchScreen.storyboard in Resources */,
 				419FFE732AA4A149003FFCF4 /* Main.html in Resources */,
@@ -402,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				419FFE762AA4A149003FFCF4 /* Icon.png in Resources */,
+				41EE55CD2B89D5550034656A /* .gitignore in Resources */,
 				419FFE782AA4A149003FFCF4 /* Style.css in Resources */,
 				419FFE5C2AA4A149003FFCF4 /* Main.storyboard in Resources */,
 				419FFE7A2AA4A149003FFCF4 /* Script.js in Resources */,
@@ -414,8 +442,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EE55CE2B89D5550034656A /* .gitignore in Resources */,
+				41EE55DA2B89DBA50034656A /* tailwind.css in Resources */,
+				41EE55D82B89DBA50034656A /* package-lock.json in Resources */,
+				41ADC7D52B8759E40058802A /* content.css in Resources */,
 				419FFE872AA4A149003FFCF4 /* background.js in Resources */,
+				41EE55D42B89DBA50034656A /* package.json in Resources */,
 				419FFE8D2AA4A149003FFCF4 /* popup.css in Resources */,
+				41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */,
 				419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE832AA4A149003FFCF4 /* images in Resources */,
 				419FFE852AA4A149003FFCF4 /* manifest.json in Resources */,
@@ -429,8 +463,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EE55CF2B89D5550034656A /* .gitignore in Resources */,
+				41EE55DB2B89DBA50034656A /* tailwind.css in Resources */,
+				41EE55D92B89DBA50034656A /* package-lock.json in Resources */,
+				41ADC7D62B8759E40058802A /* content.css in Resources */,
 				419FFE882AA4A149003FFCF4 /* background.js in Resources */,
+				41EE55D52B89DBA50034656A /* package.json in Resources */,
 				419FFE8E2AA4A149003FFCF4 /* popup.css in Resources */,
+				41EE55D72B89DBA50034656A /* tailwind.config.js in Resources */,
 				419FFE8C2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE842AA4A149003FFCF4 /* images in Resources */,
 				419FFE862AA4A149003FFCF4 /* manifest.json in Resources */,
