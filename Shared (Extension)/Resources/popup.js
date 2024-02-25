@@ -2,6 +2,9 @@ const alertEnable   = document.getElementById('alert_enable');
 const alertHostname = document.getElementById('alert_hostname');
 const alertSave     = document.getElementById('alert_save');
 
+const copyTitle     = document.getElementById('copy_title');
+const copiedTitle   = document.getElementById('copied_title');
+
 const infoBtn       = document.getElementById('info_btn');
 
 // ポップアップ開いた時に設定内容表示
@@ -13,7 +16,7 @@ browser.storage.local.get(['alertEnable', 'alertHostname'], function (result) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // 保存ボタンクリック
+    // 外部サイト移動アラート
     alertSave.addEventListener('click', function () {
         // 入力されたURLをブラウザストレージに保存する
         const alertEnableValue      = alertEnable.checked;
@@ -32,6 +35,27 @@ document.addEventListener('DOMContentLoaded', function () {
                 // popupを閉じる
                 window.close();
             });
+        });
+    });
+    
+    // Titleタグのコピー
+    copyTitle.addEventListener('click', function () {
+        // クリップボードにコピーするためのテキストを取得
+        browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            console.log('title: ' + tabs[0].title);
+            // テキストをクリップボードにコピー
+            navigator.clipboard.writeText(tabs[0].title).then(
+                () => {
+                    /* clipboard successfully set */
+                    console.log('clipboard successfully set');
+                    // 「コピーしました。」表示
+                    copiedTitle.classList.remove('hidden');
+                },
+                () => {
+                    /* clipboard write failed */
+                    console.error('clipboard write failed');
+                },
+            );
         });
     });
 
