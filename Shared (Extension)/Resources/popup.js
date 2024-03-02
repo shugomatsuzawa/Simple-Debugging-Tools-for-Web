@@ -2,8 +2,7 @@ const alertEnable   = document.getElementById('alert_enable');
 const alertHostname = document.getElementById('alert_hostname');
 const alertSave     = document.getElementById('alert_save');
 
-const copyTitle     = document.getElementById('copy_title');
-const copiedTitle   = document.getElementById('copied_title');
+const getTitle      = document.getElementById('get_title');
 
 const infoBtn       = document.getElementById('info_btn');
 
@@ -38,25 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
     
-    // Titleタグのコピー
-    copyTitle.addEventListener('click', function () {
-        // クリップボードにコピーするためのテキストを取得
-        browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-            console.log('title: ' + tabs[0].title);
-            // テキストをクリップボードにコピー
-            navigator.clipboard.writeText(tabs[0].title).then(
-                () => {
-                    /* clipboard successfully set */
-                    console.log('clipboard successfully set');
-                    // 「コピーしました。」表示
-                    copiedTitle.classList.remove('hidden');
-                },
-                () => {
-                    /* clipboard write failed */
-                    console.error('clipboard write failed');
-                },
-            );
-        });
+    // Titleタグの取得
+    browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        getTitle.value = tabs[0].title;
     });
 
     // iボタンクリック

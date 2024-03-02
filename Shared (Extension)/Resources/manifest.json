@@ -34,7 +34,6 @@
 
     "permissions": [
         "storage",
-        "activeTab",
-        "clipboardWrite"
+        "activeTab"
     ]
 }
