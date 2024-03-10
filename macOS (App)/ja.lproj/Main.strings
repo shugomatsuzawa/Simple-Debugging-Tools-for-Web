@@ -1,0 +1,36 @@
+
+/* Class = "NSMenuItem"; title = "Simple Debugging Tools for Web"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "シンプルWebデバッグツール";
+
+/* Class = "NSMenuItem"; title = "Quit Simple Debugging Tools for Web"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "シンプルWebデバッグツール を終了";
+
+/* Class = "NSMenuItem"; title = "About Simple Debugging Tools for Web"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "シンプルWebデバッグツール について";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "メインメニュー";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "ヘルプ";
+
+/* Class = "NSMenuItem"; title = "Simple Debugging Tools for Web Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "シンプルWebデバッグツール ヘルプ";
+
+/* Class = "NSWindow"; title = "Simple Debugging Tools for Web"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "シンプルWebデバッグツール";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "すべてを表示";
+
+/* Class = "NSMenuItem"; title = "Hide Simple Debugging Tools for Web"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "シンプルWebデバッグツール を非表示";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "ほかを非表示";
+
+/* Class = "NSMenu"; title = "Simple Debugging Tools for Web"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "シンプルWebデバッグツール";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "ヘルプ";
