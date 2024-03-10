@@ -15,7 +15,7 @@ cd "Shared (Extension)/Resources"
 
 # ビルドする
 npm install
-npx tailwindcss -i ./tailwind.css -o ./popup.css --minify
+npx tailwindcss -i ./tailwind.css -o ./style.css --minify
 ```
 
 ## 貢献する

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>シンプルWebデバッグツールについて</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="color-scheme" content="light dark">
+</head>
+<body>
+    <main class="container mx-auto mt-10">
+        <h1 class="text-4xl font-bold">シンプルWebデバッグツールについて</h1>
+        <section>
+            <h2 class="text-3xl font-bold mt-10">外部サイト移動アラート</h2>
+            <p class="mt-3">指定したドメインと異なるページに移動した際にお知らせします。ステージング環境化でのテスト時等、事故防止に役立ちます。</p>
+            <h3 class="text-2xl font-bold mt-10">使い方</h3>
+            <dl>
+                <dt class="mt-3">オンにする</dt>
+                <dd class="ml-8">機能の有効・無効を切り替えます。</dd>
+                <dt class="mt-3">対象ドメイン</dt>
+                <dd class="ml-8">ここに入力したドメイン以外のページにアクセスした時、画面上部でお知らせします。<br>
+                    対象となるドメインを入力してください。（フルWebサイトURLではありません。）<br>
+                    サブドメインは区別されます。</dd>
+                <dt class="mt-3">保存</dt>
+                <dd class="ml-8">ボタンをタップすると設定が反映されます。<br>
+                    うまく反映されない場合は、タブを再読み込みしてください。</dd>
+            </dl>
+        </section>
+        <section class="mt-10 border-t border-t-gray-300 dark:border-t-gray-700">
+            <h2 class="text-3xl font-bold mt-10">Titleタグの取得</h2>
+            <p class="mt-3">現在開いているタブのTitleタグテキストを取得し、コピーしやすいフィールドを表示します。</p>
+            <h3 class="text-2xl font-bold mt-10">使い方</h3>
+            <p class="mt-3">フィールドをタップすると文字列が選択されます。<br>
+                選択部分をタッチして押さえたままにしてから「コピー」をタップすると、選択されている文字列をコピーすることができます。<br>
+                キーボードの Command + C キーを押して、選択されている文字列をコピーすることもできます。</p>
+        </section>
+    </main>
+    <footer class="container mx-auto mt-10 pt-4 pb-5 text-gray-600 dark:text-gray-400 text-xs border-t border-t-gray-300 dark:border-t-gray-700">
+        <small class="pr-2.5 mr-2.5 border-r border-r-gray-300 dark:border-r-gray-700">©︎ Shugo Matsuzawa 2024</small>
+        <a href="https://shugomatsuzawa.com" target="_blank" class="text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white pr-2.5 mr-2.5 border-r border-r-gray-300 dark:border-r-gray-700">開発者Webサイト</a>
+        <a href="https://shugomatsuzawa.com/privacy/" target="_blank" class="text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white pr-2.5 mr-2.5 border-r border-r-gray-300 dark:border-r-gray-700">プライバシーポリシー</a>
+        <a href="acknowledgements.html" class="text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white">謝辞</a>
+    </footer>
+</body>
+</html>

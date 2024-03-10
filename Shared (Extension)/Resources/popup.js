@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // iボタンクリック
     infoBtn.addEventListener('click', function () {
         let createInfoData = {
-          url: "acknowledgements.html"
+          url: "about.html"
         };
         let creatingInfo = browser.tabs.create(createInfoData);
     });

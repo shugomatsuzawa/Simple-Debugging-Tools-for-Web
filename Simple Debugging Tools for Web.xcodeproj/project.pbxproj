@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410247F52B948C880051171D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 410247F42B948C880051171D /* style.css */; };
+		410247F62B948C880051171D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 410247F42B948C880051171D /* style.css */; };
+		410247F82B948D1D0051171D /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 410247F72B948D1D0051171D /* about.html */; };
+		410247F92B948D1D0051171D /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 410247F72B948D1D0051171D /* about.html */; };
 		419FFE482AA4A149003FFCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE472AA4A149003FFCF4 /* AppDelegate.swift */; };
 		419FFE4A2AA4A149003FFCF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE492AA4A149003FFCF4 /* SceneDelegate.swift */; };
 		419FFE4D2AA4A149003FFCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE4B2AA4A149003FFCF4 /* LaunchScreen.storyboard */; };
@@ -39,8 +43,6 @@
 		419FFE8A2AA4A149003FFCF4 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3C2AA4A149003FFCF4 /* content.js */; };
 		419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3D2AA4A149003FFCF4 /* popup.html */; };
 		419FFE8C2AA4A149003FFCF4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3D2AA4A149003FFCF4 /* popup.html */; };
-		419FFE8D2AA4A149003FFCF4 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3E2AA4A149003FFCF4 /* popup.css */; };
-		419FFE8E2AA4A149003FFCF4 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3E2AA4A149003FFCF4 /* popup.css */; };
 		419FFE8F2AA4A149003FFCF4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3F2AA4A149003FFCF4 /* popup.js */; };
 		419FFE902AA4A149003FFCF4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3F2AA4A149003FFCF4 /* popup.js */; };
 		41ADC7D52B8759E40058802A /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 41ADC7D42B8759E40058802A /* content.css */; };
@@ -104,6 +106,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		410247F42B948C880051171D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		410247F72B948D1D0051171D /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		419FFE2F2AA4A141003FFCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		419FFE302AA4A141003FFCF4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		419FFE312AA4A141003FFCF4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -116,7 +120,6 @@
 		419FFE3A2AA4A149003FFCF4 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		419FFE3C2AA4A149003FFCF4 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
 		419FFE3D2AA4A149003FFCF4 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		419FFE3E2AA4A149003FFCF4 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		419FFE3F2AA4A149003FFCF4 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		419FFE442AA4A149003FFCF4 /* Simple Debugging Tools for Web.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Debugging Tools for Web.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419FFE472AA4A149003FFCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -229,15 +232,16 @@
 				41EE55D02B89DBA50034656A /* package.json */,
 				41EE55D12B89DBA50034656A /* tailwind.config.js */,
 				41EE55D32B89DBA50034656A /* tailwind.css */,
+				410247F42B948C880051171D /* style.css */,
 				419FFE382AA4A149003FFCF4 /* _locales */,
 				419FFE392AA4A149003FFCF4 /* images */,
 				419FFE3A2AA4A149003FFCF4 /* manifest.json */,
 				419FFE3C2AA4A149003FFCF4 /* content.js */,
 				419FFE3D2AA4A149003FFCF4 /* popup.html */,
-				419FFE3E2AA4A149003FFCF4 /* popup.css */,
 				41ADC7D42B8759E40058802A /* content.css */,
 				419FFE3F2AA4A149003FFCF4 /* popup.js */,
 				41EE55DC2B8A5CE90034656A /* acknowledgements.html */,
+				410247F72B948D1D0051171D /* about.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -449,10 +453,11 @@
 				41EE55CE2B89D5550034656A /* .gitignore in Resources */,
 				41EE55DA2B89DBA50034656A /* tailwind.css in Resources */,
 				41EE55D82B89DBA50034656A /* package-lock.json in Resources */,
+				410247F82B948D1D0051171D /* about.html in Resources */,
 				41ADC7D52B8759E40058802A /* content.css in Resources */,
 				41EE55D42B89DBA50034656A /* package.json in Resources */,
-				419FFE8D2AA4A149003FFCF4 /* popup.css in Resources */,
 				41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */,
+				410247F52B948C880051171D /* style.css in Resources */,
 				419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE832AA4A149003FFCF4 /* images in Resources */,
 				41EE55DD2B8A5CE90034656A /* acknowledgements.html in Resources */,
@@ -470,10 +475,11 @@
 				41EE55CF2B89D5550034656A /* .gitignore in Resources */,
 				41EE55DB2B89DBA50034656A /* tailwind.css in Resources */,
 				41EE55D92B89DBA50034656A /* package-lock.json in Resources */,
+				410247F92B948D1D0051171D /* about.html in Resources */,
 				41ADC7D62B8759E40058802A /* content.css in Resources */,
 				41EE55D52B89DBA50034656A /* package.json in Resources */,
-				419FFE8E2AA4A149003FFCF4 /* popup.css in Resources */,
 				41EE55D72B89DBA50034656A /* tailwind.config.js in Resources */,
+				410247F62B948C880051171D /* style.css in Resources */,
 				419FFE8C2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE842AA4A149003FFCF4 /* images in Resources */,
 				41EE55DE2B8A5CE90034656A /* acknowledgements.html in Resources */,
