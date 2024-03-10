@@ -726,7 +726,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shugomatsuzawa.Simple-Debugging-Tools-for-Web.Extension";
 				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -760,7 +760,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shugomatsuzawa.Simple-Debugging-Tools-for-Web.Extension";
 				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -882,7 +882,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shugomatsuzawa.Simple-Debugging-Tools-for-Web.Extension";
 				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -914,7 +914,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Shugo-Matsuzawa.Simple-Debugging-Tools-for-Web.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shugomatsuzawa.Simple-Debugging-Tools-for-Web.Extension";
 				PRODUCT_NAME = "Simple Debugging Tools for Web Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
