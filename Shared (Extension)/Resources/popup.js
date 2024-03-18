@@ -11,7 +11,7 @@ browser.storage.local.get(['alertEnable', 'alertHostname'], function (result) {
     const savedAlertEnable      = result.alertEnable;
     const savedAlertHostname    = result.alertHostname;
     alertEnable.checked = savedAlertEnable;
-    alertHostname.value = savedAlertHostname;
+    alertHostname.value = savedAlertHostname ?? '';
 });
 
 document.addEventListener('DOMContentLoaded', function () {
