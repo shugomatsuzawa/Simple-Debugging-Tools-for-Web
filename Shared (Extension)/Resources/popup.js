@@ -7,7 +7,7 @@ const getTitle      = document.getElementById('get_title');
 const infoBtn       = document.getElementById('info_btn');
 
 // ポップアップ開いた時に設定内容表示
-browser.storage.local.get(['alertEnable', 'alertHostname'], function (result) {
+browser.storage.local.get(['alertEnable', 'alertHostname']).then(function (result) {
     const savedAlertEnable      = result.alertEnable;
     const savedAlertHostname    = result.alertHostname;
     alertEnable.checked = savedAlertEnable;
@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
         browser.storage.local.set({
             'alertEnable': alertEnableValue,
             'alertHostname': alertHostnameValue
-        }, function () {
+        }).then(function () {
             console.log('URL and Toggle State saved:', alertHostnameValue, alertEnableValue);
             
             // 現在のアクティブなタブを取得する
-            browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            browser.tabs.query({ active: true, currentWindow: true }).then(function (tabs) {
                 const activeTab = tabs[0];
                 // アクティブなタブをリロードする
                 browser.tabs.reload(activeTab.id);
@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-    
+
     // Titleタグの取得
-    browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    browser.tabs.query({ active: true, currentWindow: true }).then(function (tabs) {
         getTitle.value = tabs[0].title;
     });
 

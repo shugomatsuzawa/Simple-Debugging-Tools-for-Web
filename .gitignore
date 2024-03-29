@@ -92,3 +92,7 @@ iOSInjectionProject/
 
 .DS_Store
 node_modules/
+
+# Chrome Extension
+Shared\ (Extension)/*.crx
+Shared\ (Extension)/*.pem

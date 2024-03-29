@@ -1,5 +1,5 @@
 function exitAlert() {
-    browser.storage.local.get(['alertEnable', 'alertHostname'], function (result) {
+    browser.storage.local.get(['alertEnable', 'alertHostname']).then(function (result) {
         const savedAlertEnable      = result.alertEnable;
         const savedAlertHostname    = result.alertHostname;
         if(savedAlertEnable && savedAlertHostname){
