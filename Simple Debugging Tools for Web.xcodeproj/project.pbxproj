@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		410247F52B948C880051171D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 410247F42B948C880051171D /* style.css */; };
 		410247F82B948D1D0051171D /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 410247F72B948D1D0051171D /* about.html */; };
+		4175040D2BC0244E00CD7259 /* browser-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDE92BC0244900CD7259 /* browser-polyfill.js */; };
+		4175040E2BC0244E00CD7259 /* browser-polyfill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDEB2BC0244900CD7259 /* browser-polyfill.min.js */; };
+		4175040F2BC0244E00CD7259 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDEE2BC0244900CD7259 /* LICENSE */; };
+		417504112BC0244E00CD7259 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDF02BC0244900CD7259 /* README.md */; };
 		419FFE482AA4A149003FFCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE472AA4A149003FFCF4 /* AppDelegate.swift */; };
 		419FFE4A2AA4A149003FFCF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE492AA4A149003FFCF4 /* SceneDelegate.swift */; };
 		419FFE4D2AA4A149003FFCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE4B2AA4A149003FFCF4 /* LaunchScreen.storyboard */; };
@@ -28,11 +32,6 @@
 		419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3D2AA4A149003FFCF4 /* popup.html */; };
 		419FFE8F2AA4A149003FFCF4 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE3F2AA4A149003FFCF4 /* popup.js */; };
 		41ADC7D52B8759E40058802A /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 41ADC7D42B8759E40058802A /* content.css */; };
-		41CB36B32BB707FE0074CE75 /* browser-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = 41CB36AA2BB707FE0074CE75 /* browser-polyfill.js */; };
-		41CB36B42BB707FE0074CE75 /* browser-polyfill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 41CB36AC2BB707FE0074CE75 /* browser-polyfill.min.js */; };
-		41CB36B52BB707FE0074CE75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 41CB36AF2BB707FE0074CE75 /* LICENSE */; };
-		41CB36B62BB707FE0074CE75 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 41CB36B02BB707FE0074CE75 /* package.json */; };
-		41CB36B72BB707FE0074CE75 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41CB36B12BB707FE0074CE75 /* README.md */; };
 		41EE55CC2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
 		41EE55CE2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
 		41EE55D42B89DBA50034656A /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D02B89DBA50034656A /* package.json */; };
@@ -69,6 +68,13 @@
 /* Begin PBXFileReference section */
 		410247F42B948C880051171D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		410247F72B948D1D0051171D /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		4175FDE92BC0244900CD7259 /* browser-polyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.js"; sourceTree = "<group>"; };
+		4175FDEA2BC0244900CD7259 /* browser-polyfill.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "browser-polyfill.js.map"; sourceTree = "<group>"; };
+		4175FDEB2BC0244900CD7259 /* browser-polyfill.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.min.js"; sourceTree = "<group>"; };
+		4175FDEC2BC0244900CD7259 /* browser-polyfill.min.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "browser-polyfill.min.js.map"; sourceTree = "<group>"; };
+		4175FDEE2BC0244900CD7259 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4175FDEF2BC0244900CD7259 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		4175FDF02BC0244900CD7259 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		419D4DBB2B9DE48200FA05EC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		419D4DBC2B9DE48200FA05EC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		419D4DBE2B9DE48300FA05EC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ja; path = ../ja.lproj/Main.html; sourceTree = "<group>"; };
@@ -95,13 +101,6 @@
 		419FFE622AA4A149003FFCF4 /* Simple Debugging Tools for Web Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Debugging Tools for Web Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419FFE672AA4A149003FFCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41ADC7D42B8759E40058802A /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
-		41CB36AA2BB707FE0074CE75 /* browser-polyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.js"; sourceTree = "<group>"; };
-		41CB36AB2BB707FE0074CE75 /* browser-polyfill.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "browser-polyfill.js.map"; sourceTree = "<group>"; };
-		41CB36AC2BB707FE0074CE75 /* browser-polyfill.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.min.js"; sourceTree = "<group>"; };
-		41CB36AD2BB707FE0074CE75 /* browser-polyfill.min.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "browser-polyfill.min.js.map"; sourceTree = "<group>"; };
-		41CB36AF2BB707FE0074CE75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		41CB36B02BB707FE0074CE75 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		41CB36B12BB707FE0074CE75 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		41EE55CB2B89D5550034656A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		41EE55D02B89DBA50034656A /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		41EE55D12B89DBA50034656A /* tailwind.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tailwind.config.js; sourceTree = "<group>"; };
@@ -130,6 +129,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4175FDED2BC0244900CD7259 /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				4175FDE92BC0244900CD7259 /* browser-polyfill.js */,
+				4175FDEA2BC0244900CD7259 /* browser-polyfill.js.map */,
+				4175FDEB2BC0244900CD7259 /* browser-polyfill.min.js */,
+				4175FDEC2BC0244900CD7259 /* browser-polyfill.min.js.map */,
+			);
+			path = dist;
+			sourceTree = "<group>";
+		};
+		4175FDF12BC0244900CD7259 /* webextension-polyfill */ = {
+			isa = PBXGroup;
+			children = (
+				4175FDED2BC0244900CD7259 /* dist */,
+				4175FDEE2BC0244900CD7259 /* LICENSE */,
+				4175FDEF2BC0244900CD7259 /* package.json */,
+				4175FDF02BC0244900CD7259 /* README.md */,
+			);
+			path = "webextension-polyfill";
+			sourceTree = "<group>";
+		};
+		4175FF272BC0244900CD7259 /* node_modules */ = {
+			isa = PBXGroup;
+			children = (
+				4175FDF12BC0244900CD7259 /* webextension-polyfill */,
+			);
+			path = node_modules;
+			sourceTree = "<group>";
+		};
 		419FFE272AA4A141003FFCF4 = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +207,7 @@
 		419FFE372AA4A149003FFCF4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				41CB36B22BB707FE0074CE75 /* webextension-polyfill */,
+				4175FF272BC0244900CD7259 /* node_modules */,
 				41EE55D22B89DBA50034656A /* package-lock.json */,
 				41EE55D02B89DBA50034656A /* package.json */,
 				41EE55D12B89DBA50034656A /* tailwind.config.js */,
@@ -224,29 +253,6 @@
 				419FFE672AA4A149003FFCF4 /* Info.plist */,
 			);
 			path = "iOS (Extension)";
-			sourceTree = "<group>";
-		};
-		41CB36AE2BB707FE0074CE75 /* dist */ = {
-			isa = PBXGroup;
-			children = (
-				41CB36AA2BB707FE0074CE75 /* browser-polyfill.js */,
-				41CB36AB2BB707FE0074CE75 /* browser-polyfill.js.map */,
-				41CB36AC2BB707FE0074CE75 /* browser-polyfill.min.js */,
-				41CB36AD2BB707FE0074CE75 /* browser-polyfill.min.js.map */,
-			);
-			path = dist;
-			sourceTree = "<group>";
-		};
-		41CB36B22BB707FE0074CE75 /* webextension-polyfill */ = {
-			isa = PBXGroup;
-			children = (
-				41CB36AE2BB707FE0074CE75 /* dist */,
-				41CB36AF2BB707FE0074CE75 /* LICENSE */,
-				41CB36B02BB707FE0074CE75 /* package.json */,
-				41CB36B12BB707FE0074CE75 /* README.md */,
-			);
-			name = "webextension-polyfill";
-			path = "node_modules/webextension-polyfill";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,22 +351,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4175040F2BC0244E00CD7259 /* LICENSE in Resources */,
 				41EE55CE2B89D5550034656A /* .gitignore in Resources */,
 				41EE55DA2B89DBA50034656A /* tailwind.css in Resources */,
-				41CB36B72BB707FE0074CE75 /* README.md in Resources */,
 				41EE55D82B89DBA50034656A /* package-lock.json in Resources */,
 				410247F82B948D1D0051171D /* about.html in Resources */,
-				41CB36B62BB707FE0074CE75 /* package.json in Resources */,
+				4175040D2BC0244E00CD7259 /* browser-polyfill.js in Resources */,
 				41ADC7D52B8759E40058802A /* content.css in Resources */,
+				4175040E2BC0244E00CD7259 /* browser-polyfill.min.js in Resources */,
 				41EE55D42B89DBA50034656A /* package.json in Resources */,
-				41CB36B52BB707FE0074CE75 /* LICENSE in Resources */,
 				41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */,
 				410247F52B948C880051171D /* style.css in Resources */,
 				419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE832AA4A149003FFCF4 /* images in Resources */,
-				41CB36B32BB707FE0074CE75 /* browser-polyfill.js in Resources */,
+				417504112BC0244E00CD7259 /* README.md in Resources */,
 				41EE55DD2B8A5CE90034656A /* acknowledgements.html in Resources */,
-				41CB36B42BB707FE0074CE75 /* browser-polyfill.min.js in Resources */,
 				419FFE852AA4A149003FFCF4 /* manifest.json in Resources */,
 				419FFE812AA4A149003FFCF4 /* _locales in Resources */,
 				419FFE892AA4A149003FFCF4 /* content.js in Resources */,
