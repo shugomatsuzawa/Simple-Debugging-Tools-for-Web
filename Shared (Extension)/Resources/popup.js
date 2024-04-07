@@ -9,6 +9,19 @@ const urlFileSave   = document.getElementById('url_file_save');
 
 const infoBtn       = document.getElementById('info_btn');
 
+// UAチェック
+function uaData() {
+    // User-Agent Client Hintsが利用できる場合
+    if (window.navigator.userAgentData) {
+        const uaData = navigator.userAgentData;
+        const brands = uaData.brands; // ブランド情報を取得
+        const os = uaData.platform; // OS情報。"macOS"など
+        const ret = {brands: brands, os: os};
+        return ret;
+    }
+    return false;
+}
+
 // ポップアップ開いた時に設定内容表示
 browser.storage.local.get(['alertEnable', 'alertHostname']).then(function (result) {
     const savedAlertEnable      = result.alertEnable;
@@ -45,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
         getTitle.value = tabs[0].title;
     });
     
-    // URLファイルの作成
-    // ブラウザチェック // TODO: OSチェック
-    if (navigator.share) {
+    // Windowsインターネットショートカットの作成（Windows以外）
+    // ブラウザチェック
+    if (navigator.share && uaData().os != 'Windows') {
         urlFileSave.addEventListener('click', function () {
             browser.tabs.query({ active: true, currentWindow: true }).then(function (tabs) {
                 const url = tabs[0].url;
