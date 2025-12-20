@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "basecoat-css": "^0.3.2",
+    "tailwindcss": "^4.1.12"
   },
   "dependencies": {
     "webextension-polyfill": "^0.10.0"

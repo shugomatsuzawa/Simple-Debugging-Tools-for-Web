@@ -36,7 +36,6 @@
 		41EE55CC2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
 		41EE55CE2B89D5550034656A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55CB2B89D5550034656A /* .gitignore */; };
 		41EE55D42B89DBA50034656A /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D02B89DBA50034656A /* package.json */; };
-		41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D12B89DBA50034656A /* tailwind.config.js */; };
 		41EE55D82B89DBA50034656A /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D22B89DBA50034656A /* package-lock.json */; };
 		41EE55DA2B89DBA50034656A /* tailwind.css in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55D32B89DBA50034656A /* tailwind.css */; };
 		41EE55DD2B8A5CE90034656A /* acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = 41EE55DC2B8A5CE90034656A /* acknowledgements.html */; };
@@ -105,7 +104,6 @@
 		41ADC7D42B8759E40058802A /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
 		41EE55CB2B89D5550034656A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		41EE55D02B89DBA50034656A /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		41EE55D12B89DBA50034656A /* tailwind.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tailwind.config.js; sourceTree = "<group>"; };
 		41EE55D22B89DBA50034656A /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
 		41EE55D32B89DBA50034656A /* tailwind.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tailwind.css; sourceTree = "<group>"; };
 		41EE55DC2B8A5CE90034656A /* acknowledgements.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = acknowledgements.html; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 				4175FF272BC0244900CD7259 /* node_modules */,
 				41EE55D22B89DBA50034656A /* package-lock.json */,
 				41EE55D02B89DBA50034656A /* package.json */,
-				41EE55D12B89DBA50034656A /* tailwind.config.js */,
 				41EE55D32B89DBA50034656A /* tailwind.css */,
 				410247F42B948C880051171D /* style.css */,
 				419FFE382AA4A149003FFCF4 /* _locales */,
@@ -364,7 +361,6 @@
 				41ADC7D52B8759E40058802A /* content.css in Resources */,
 				4175040E2BC0244E00CD7259 /* browser-polyfill.min.js in Resources */,
 				41EE55D42B89DBA50034656A /* package.json in Resources */,
-				41EE55D62B89DBA50034656A /* tailwind.config.js in Resources */,
 				410247F52B948C880051171D /* style.css in Resources */,
 				419FFE8B2AA4A149003FFCF4 /* popup.html in Resources */,
 				419FFE832AA4A149003FFCF4 /* images in Resources */,
@@ -559,11 +555,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4658MT52J8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "SDTFW Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -571,7 +567,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -593,11 +589,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4658MT52J8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Debugging Tools for Web Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "SDTFW Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -605,7 +601,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -632,7 +628,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4658MT52J8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -648,7 +644,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -675,7 +671,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4658MT52J8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -691,7 +687,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
