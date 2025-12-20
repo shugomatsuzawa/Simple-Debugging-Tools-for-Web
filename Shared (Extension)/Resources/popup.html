@@ -8,6 +8,14 @@
     <meta name="color-scheme" content="light dark">
 </head>
 <body class="w-full min-w-60 max-w-(--breakpoint-sm) mx-auto p-4">
+    <fieldset class="border-b border-b-gray-300 dark:border-b-gray-700 pb-3 mt-1">
+        <legend class="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Titleタグの取得</legend>
+        <input type="text" id="get_title" name="get_title" readonly class="block w-full rounded-md border-0 py-1.5 px-1 text-gray-900 dark:text-gray-100 shadow-xs ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6 select-all" />
+    </fieldset>
+    <fieldset class="border-b border-b-gray-300 dark:border-b-gray-700 pb-3 mt-1">
+        <legend class="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">URLの取得（エンコード済み）</legend>
+        <input type="text" id="get_url" name="get_url" readonly class="block w-full rounded-md border-0 py-1.5 px-1 text-gray-900 dark:text-gray-100 shadow-xs ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6 select-all" />
+    </fieldset>
     <fieldset class="border-b border-b-gray-300 dark:border-b-gray-700 pb-3">
         <legend class="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">外部サイト移動アラート</legend>
         <div class="mb-3 flex items-center">
@@ -21,10 +29,6 @@
         <div>
             <button type="button" id="alert_save" class="w-full rounded-md bg-sky-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-sky-500 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">保存</button>
         </div>
-    </fieldset>
-    <fieldset class="border-b border-b-gray-300 dark:border-b-gray-700 pb-3 mt-1">
-        <legend class="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Titleタグの取得</legend>
-        <input type="text" id="get_title" name="get_title" readonly class="block w-full rounded-md border-0 py-1.5 px-1 text-gray-900 dark:text-gray-100 shadow-xs ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6 select-all" />
     </fieldset>
     <fieldset id="url_file_field" class="border-b border-b-gray-300 dark:border-b-gray-700 pb-3 mt-1">
         <legend class="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Windowsインターネットショートカットの作成</legend>

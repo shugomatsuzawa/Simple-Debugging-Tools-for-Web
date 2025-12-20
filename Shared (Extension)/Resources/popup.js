@@ -3,6 +3,7 @@ const alertHostname = document.getElementById('alert_hostname');
 const alertSave     = document.getElementById('alert_save');
 
 const getTitle      = document.getElementById('get_title');
+const getUrl        = document.getElementById('get_url');
 
 const urlFileField  = document.getElementById('url_file_field');
 const urlFileSave   = document.getElementById('url_file_save');
@@ -54,10 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Titleタグの取得
+    // URLの取得（エンコード済み）
     browser.tabs.query({ active: true, currentWindow: true }).then(function (tabs) {
-        getTitle.value = tabs[0].title;
+        getTitle.value  = tabs[0].title;
+        getUrl.value    = encodeURI( tabs[0].url );
     });
-    
+
     // Windowsインターネットショートカットの作成（Windows以外）
     // ブラウザチェック
     if (navigator.share && uaData().os != 'Windows') {
@@ -93,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // iボタンクリック
     infoBtn.addEventListener('click', function () {
         let createInfoData = {
-          url: "about.html"
+            url: "about.html"
         };
         let creatingInfo = browser.tabs.create(createInfoData);
     });
