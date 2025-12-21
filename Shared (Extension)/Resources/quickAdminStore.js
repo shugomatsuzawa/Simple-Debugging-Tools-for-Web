@@ -22,8 +22,7 @@ function normalizeEntry(entry) {
                 .map((domain) => (typeof domain === 'string' ? domain.trim() : ''))
                 .filter(Boolean)
             : [],
-        path: typeof entry.path === 'string' ? entry.path : '',
-        custom: typeof entry.custom === 'string' ? entry.custom : ''
+        path: typeof entry.path === 'string' ? entry.path : ''
     };
 }
 
