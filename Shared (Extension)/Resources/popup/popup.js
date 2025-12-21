@@ -259,7 +259,8 @@ function openQuickAdminTab(entry, tab) {
         window.alert('URL を生成できませんでした。設定を確認してください。');
         return;
     }
-    console.debug('targetUrl ', targetUrl)
+    console.debug('targetUrl ', targetUrl);
+    browser.tabs.create({ url: targetUrl });
 }
 
 // path/custom 設定をもとに遷移先 URL を構築
