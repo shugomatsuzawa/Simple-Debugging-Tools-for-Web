@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="node_modules/webextension-polyfill/dist/browser-polyfill.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <!-- <script type="module" src="node_modules/webextension-polyfill/dist/browser-polyfill.js"></script> -->
     <script type="module" src="popup.js"></script>
     <meta name="color-scheme" content="light dark">
 </head>
@@ -30,12 +30,22 @@
             <button type="button" id="alert_save" class="w-full rounded-md bg-sky-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-sky-500 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">保存</button>
         </div>
     </fieldset>
+    <fieldset class="border-b border-b-gray-300 dark:border-b-gray-700 pb-3 mt-1">
+        <legend class="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">クイックアドミン</legend>
+        <div id="quick-admin-buttons" class="mt-2 flex flex-col gap-2"></div>
+        <p id="quick-admin-empty" class="text-xs text-gray-500 dark:text-gray-400 mt-2">現在のタブに対応するクイックアドミンはありません。設定で作成してください。</p>
+        <template id="quick-admin-button-template">
+            <button type="button" class="w-full rounded-md border border-gray-300 dark:border-gray-600 px-3 py-2 text-sm font-semibold text-gray-900 dark:text-gray-100 shadow-xs hover:bg-gray-100 dark:hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 text-left" data-quick-admin-id=""></button>
+        </template>
+    </fieldset>
     <fieldset id="url_file_field" class="border-b border-b-gray-300 dark:border-b-gray-700 pb-3 mt-1">
         <legend class="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Windowsインターネットショートカットの作成</legend>
         <button type="button" id="url_file_save" class="w-full rounded-md bg-sky-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-sky-500 focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">共有</button>
     </fieldset>
     <div class="mt-1 text-right">
-        <button type="button" id="info_btn" class="text-sky-600 dark:text-sky-400" title="シンプルWebデバッグツールについて">ⓘ</button>
+        <!-- Lucide icons -->
+        <button type="button" id="settings_btn" class="text-sky-600 dark:text-sky-400" title="設定"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <button type="button" id="info_btn" class="text-sky-600 dark:text-sky-400" title="シンプルWebデバッグツールについて"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></button>
     </div>
 </body>
 </html>

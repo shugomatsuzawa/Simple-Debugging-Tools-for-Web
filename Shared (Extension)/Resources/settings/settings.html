@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>設定 - シンプルWebデバッグツール</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+</head>
+<body>
+    <main class="container mx-auto px-4 mt-10">
+        <h1 class="text-4xl font-bold">設定</h1>
+        <section>
+            <h2 class="text-3xl font-bold mt-10">クイックアドミン</h2>
+            <p class="mt-3">TODO: 説明文</p>
+            <div class="mt-4 flex flex-col gap-3 divide-y divide-border" id="quick-admin-list" aria-live="polite"></div>
+            <p id="quick-admin-empty" class="mt-4 text-sm text-muted-foreground">まだクイックアドミンは登録されていません。「追加」ボタンから作成してください。</p>
+
+            <template id="quick-admin-item-template">
+                <article class="group/item flex items-center border text-sm rounded-md transition-colors [a]:hover:bg-accent/50 [a]:transition-colors duration-100 flex-wrap outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] border-transparent p-4 gap-4" data-quick-admin-id="">
+                    <div class="flex flex-1 flex-col gap-1">
+                        <h3 class="flex w-fit items-center gap-2 text-sm leading-snug font-medium" data-field="name"></h3>
+                        <p class="text-muted-foreground line-clamp-2 text-sm leading-normal font-normal text-balance [&>a:hover]:text-primary [&>a]:underline [&>a]:underline-offset-4" data-field="destination"></p>
+                        <p class="text-xs text-muted-foreground" data-field="domains"></p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="button" class="btn-sm-outline" data-action="edit">編集</button>
+                        <button type="button" class="btn-sm-outline text-red-600 hover:text-red-700 focus-visible:text-red-700" data-action="delete">削除</button>
+                    </div>
+                </article>
+                <hr role="separator" class="border-border">
+            </template>
+
+            <button type="button" class="btn mt-6" id="quick-admin-add">追加</button>
+
+            <dialog id="dialog-edit-quick-admin-item" class="dialog w-full sm:max-w-[425px] max-h-[612px]" aria-labelledby="dialog-edit-quick-admin-item-title" aria-describedby="dialog-edit-quick-admin-item-description" onclick="if (event.target === this) this.close()">
+                <div>
+                    <header>
+                        <h2 id="dialog-edit-quick-admin-item-title">項目を編集</h2>
+                        <p id="dialog-edit-quick-admin-item-description">項目はこちらで変更できます。完了したら「保存」をクリックしてください。</p>
+                    </header>
+
+                    <section>
+                        <form class="form grid gap-4" id="quick-admin-form" novalidate>
+                            <p id="quick-admin-form-error" class="text-sm text-red-600 hidden" role="alert"></p>
+                            <div class="grid gap-3">
+                                <label for="dialog-edit-quick-admin-item-name">名称</label>
+                                <input type="text" id="dialog-edit-quick-admin-item-name" required />
+                            </div>
+                            <div class="grid gap-3">
+                                <label for="dialog-edit-quick-admin-item-target-domain">対象ドメイン（カンマ区切り、未入力で全ドメインが対象）</label>
+                                <input type="text" id="dialog-edit-quick-admin-item-target-domain" inputmode="url" />
+                            </div>
+                            <div class="grid gap-3">
+                                <label for="dialog-edit-quick-admin-item-path">URLパス置換文字列</label>
+                                <input type="text" id="dialog-edit-quick-admin-item-path" required inputmode="url" placeholder="例: /wp-admin :8000 等" />
+                            </div>
+                            <div class="grid gap-3">
+                                <label for="dialog-edit-quick-admin-item-custom">カスタム正規表現（オプション）</label>
+                                <input type="text" id="dialog-edit-quick-admin-item-custom" placeholder="例: /pattern/flags" />
+                            </div>
+                        </form>
+                    </section>
+
+                    <footer>
+                        <button type="button" class="btn-outline" data-dialog-close>キャンセル</button>
+                        <button type="submit" class="btn" form="quick-admin-form">保存</button>
+                    </footer>
+
+                    <button type="button" aria-label="Close dialog" class="absolute right-4 top-4 text-gray-500 hover:text-black dark:hover:text-white" data-dialog-close>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </dialog>
+        </section>
+    </main>
+    <footer class="container mx-auto px-4 mt-10 pt-4 pb-5 text-gray-600 dark:text-gray-400 text-xs border-t border-t-gray-300 dark:border-t-gray-700">
+        <small class="inline-block pr-2.5 mr-2.5 border-r border-r-gray-300 dark:border-r-gray-700">©︎ Shugo Matsuzawa 2025</small>
+        <a href="https://shugomatsuzawa.com/works/2024/simple-debugging-tools-for-web/" target="_blank" class="inline-block text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white pr-2.5 mr-2.5 border-r border-r-gray-300 dark:border-r-gray-700">開発者Webサイト</a>
+        <a href="https://shugomatsuzawa.com/privacy/" target="_blank" class="inline-block text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white pr-2.5 mr-2.5 border-r border-r-gray-300 dark:border-r-gray-700">プライバシーポリシー</a>
+        <a href="acknowledgements.html" class="inline-block text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white">謝辞</a>
+    </footer>
+    <!-- <script type="module" src="node_modules/webextension-polyfill/dist/browser-polyfill.js"></script> -->
+    <!-- <script src="node_modules/basecoat-css/dist/js/all.js" defer></script> -->
+    <script type="module" src="settings.js"></script>
+</body>
+</html>
