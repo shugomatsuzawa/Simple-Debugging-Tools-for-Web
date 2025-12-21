@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>設定 - シンプルWebデバッグツール</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
 </head>
@@ -34,7 +34,7 @@
             <button type="button" class="btn mt-6" id="quick-admin-add">追加</button>
 
             <dialog id="dialog-edit-quick-admin-item" class="dialog w-full sm:max-w-[425px] max-h-[612px]" aria-labelledby="dialog-edit-quick-admin-item-title" aria-describedby="dialog-edit-quick-admin-item-description" onclick="if (event.target === this) this.close()">
-                <div class="relative">
+                <div>
                     <header>
                         <h2 id="dialog-edit-quick-admin-item-title">項目を編集</h2>
                         <p id="dialog-edit-quick-admin-item-description">項目はこちらで変更できます。完了したら「保存」をクリックしてください。</p>
@@ -83,7 +83,8 @@
         <a href="https://shugomatsuzawa.com/privacy/" target="_blank" class="inline-block text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white pr-2.5 mr-2.5 border-r border-r-gray-300 dark:border-r-gray-700">プライバシーポリシー</a>
         <a href="acknowledgements.html" class="inline-block text-sky-600 dark:text-sky-400 hover:text-black dark:hover:text-white">謝辞</a>
     </footer>
-    <script type="module" src="node_modules/webextension-polyfill/dist/browser-polyfill.js"></script>
+    <!-- <script type="module" src="node_modules/webextension-polyfill/dist/browser-polyfill.js"></script> -->
+    <!-- <script src="node_modules/basecoat-css/dist/js/all.js" defer></script> -->
     <script type="module" src="settings.js"></script>
 </body>
 </html>

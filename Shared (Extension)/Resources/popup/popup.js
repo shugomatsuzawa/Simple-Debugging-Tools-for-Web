@@ -1,5 +1,5 @@
 // クイックアドミンの設定を読み込み・購読する
-import { loadQuickAdmins, subscribeQuickAdmins } from './quickAdminStore.js';
+import { loadQuickAdmins, subscribeQuickAdmins } from '../quickAdminStore.js';
 
 const alertEnable   = document.getElementById('alert_enable');
 const alertHostname = document.getElementById('alert_hostname');
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // iボタンクリック
     infoBtn.addEventListener('click', function () {
         let createInfoData = {
-            url: "about.html"
+            url: "settings/about.html"
         };
         let creatingInfo = browser.tabs.create(createInfoData);
     });
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 設定ボタンクリック
     settingsBtn.addEventListener('click', function () {
         let createSettingsData = {
-            url: "settings.html"
+            url: "settings/settings.html"
         };
         let creatingSettings = browser.tabs.create(createSettingsData);
     });

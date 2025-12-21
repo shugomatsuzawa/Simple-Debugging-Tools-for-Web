@@ -4,7 +4,7 @@ import {
     loadQuickAdmins,
     subscribeQuickAdmins,
     upsertQuickAdmin
-} from './quickAdminStore.js';
+} from '../quickAdminStore.js';
 
 // DOMContentLoaded 後に初期化するユーティリティ
 const ready = (callback) => {
