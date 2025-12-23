@@ -92,7 +92,6 @@ iOSInjectionProject/
 
 .DS_Store
 Shared\ (Extension)/Resources/node_modules/*
-!Shared\ (Extension)/Resources/node_modules/webextension-polyfill/
 
 # Chrome Extension
 Shared\ (Extension)/*.crx

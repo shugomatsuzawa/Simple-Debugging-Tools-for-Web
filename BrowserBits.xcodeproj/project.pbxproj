@@ -3,19 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		410247F52B948C880051171D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 410247F42B948C880051171D /* style.css */; };
 		412B0A272EF71CD600DDA9E4 /* quickAdminStore.js in Resources */ = {isa = PBXBuildFile; fileRef = 412B0A242EF71CD600DDA9E4 /* quickAdminStore.js */; };
 		412B0A792EF80BC700DDA9E4 /* theme.js in Resources */ = {isa = PBXBuildFile; fileRef = 412B0A782EF80BC700DDA9E4 /* theme.js */; };
+		415321FF2EFB0A18005AF7B9 /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 415321FE2EFB0A18005AF7B9 /* popup */; };
+		415322032EFB0ACB005AF7B9 /* content_scripts in Resources */ = {isa = PBXBuildFile; fileRef = 415322022EFB0ACB005AF7B9 /* content_scripts */; };
+		415322052EFB0B20005AF7B9 /* settings in Resources */ = {isa = PBXBuildFile; fileRef = 415322042EFB0B20005AF7B9 /* settings */; };
+		415322562EFB0CAC005AF7B9 /* browser-polyfill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 415322552EFB0CAC005AF7B9 /* browser-polyfill.min.js */; };
 		415D79E22DF87063003F246E /* simple-debugging-tools-for-web.icon in Resources */ = {isa = PBXBuildFile; fileRef = 415D79E12DF87063003F246E /* simple-debugging-tools-for-web.icon */; };
 		415D79E62DF8725A003F246E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 415D79E52DF8725A003F246E /* Icon.png */; };
-		4175040D2BC0244E00CD7259 /* browser-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDE92BC0244900CD7259 /* browser-polyfill.js */; };
-		4175040E2BC0244E00CD7259 /* browser-polyfill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDEB2BC0244900CD7259 /* browser-polyfill.min.js */; };
-		4175040F2BC0244E00CD7259 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDEE2BC0244900CD7259 /* LICENSE */; };
-		417504112BC0244E00CD7259 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDF02BC0244900CD7259 /* README.md */; };
 		419FFE482AA4A149003FFCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE472AA4A149003FFCF4 /* AppDelegate.swift */; };
 		419FFE4A2AA4A149003FFCF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FFE492AA4A149003FFCF4 /* SceneDelegate.swift */; };
 		419FFE4D2AA4A149003FFCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419FFE4B2AA4A149003FFCF4 /* LaunchScreen.storyboard */; };
@@ -65,15 +65,12 @@
 		410247F42B948C880051171D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		412B0A242EF71CD600DDA9E4 /* quickAdminStore.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = quickAdminStore.js; sourceTree = "<group>"; };
 		412B0A782EF80BC700DDA9E4 /* theme.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = theme.js; sourceTree = "<group>"; };
+		415321FE2EFB0A18005AF7B9 /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; path = popup; sourceTree = "<group>"; };
+		415322022EFB0ACB005AF7B9 /* content_scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = content_scripts; sourceTree = "<group>"; };
+		415322042EFB0B20005AF7B9 /* settings */ = {isa = PBXFileReference; lastKnownFileType = folder; path = settings; sourceTree = "<group>"; };
+		415322552EFB0CAC005AF7B9 /* browser-polyfill.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.min.js"; sourceTree = "<group>"; };
 		415D79E12DF87063003F246E /* simple-debugging-tools-for-web.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "simple-debugging-tools-for-web.icon"; sourceTree = "<group>"; };
 		415D79E52DF8725A003F246E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		4175FDE92BC0244900CD7259 /* browser-polyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.js"; sourceTree = "<group>"; };
-		4175FDEA2BC0244900CD7259 /* browser-polyfill.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "browser-polyfill.js.map"; sourceTree = "<group>"; };
-		4175FDEB2BC0244900CD7259 /* browser-polyfill.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.min.js"; sourceTree = "<group>"; };
-		4175FDEC2BC0244900CD7259 /* browser-polyfill.min.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "browser-polyfill.min.js.map"; sourceTree = "<group>"; };
-		4175FDEE2BC0244900CD7259 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4175FDEF2BC0244900CD7259 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		4175FDF02BC0244900CD7259 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		419D4DBB2B9DE48200FA05EC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		419D4DBC2B9DE48200FA05EC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		419D4DBE2B9DE48300FA05EC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ja; path = ../ja.lproj/Main.html; sourceTree = "<group>"; };
@@ -103,12 +100,6 @@
 		41EE55E02B8A69E00034656A /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		412B0A282EF7E45F00DDA9E4 /* settings */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = settings; sourceTree = "<group>"; };
-		412B0A292EF7E4C700DDA9E4 /* content_scripts */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = content_scripts; sourceTree = "<group>"; };
-		412B0A2A2EF7E4EB00DDA9E4 /* popup */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = popup; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		419FFE412AA4A149003FFCF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -127,36 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4175FDED2BC0244900CD7259 /* dist */ = {
-			isa = PBXGroup;
-			children = (
-				4175FDE92BC0244900CD7259 /* browser-polyfill.js */,
-				4175FDEA2BC0244900CD7259 /* browser-polyfill.js.map */,
-				4175FDEB2BC0244900CD7259 /* browser-polyfill.min.js */,
-				4175FDEC2BC0244900CD7259 /* browser-polyfill.min.js.map */,
-			);
-			path = dist;
-			sourceTree = "<group>";
-		};
-		4175FDF12BC0244900CD7259 /* webextension-polyfill */ = {
-			isa = PBXGroup;
-			children = (
-				4175FDED2BC0244900CD7259 /* dist */,
-				4175FDEE2BC0244900CD7259 /* LICENSE */,
-				4175FDEF2BC0244900CD7259 /* package.json */,
-				4175FDF02BC0244900CD7259 /* README.md */,
-			);
-			path = "webextension-polyfill";
-			sourceTree = "<group>";
-		};
-		4175FF272BC0244900CD7259 /* node_modules */ = {
-			isa = PBXGroup;
-			children = (
-				4175FDF12BC0244900CD7259 /* webextension-polyfill */,
-			);
-			path = node_modules;
-			sourceTree = "<group>";
-		};
 		419FFE272AA4A141003FFCF4 = {
 			isa = PBXGroup;
 			children = (
@@ -206,12 +167,9 @@
 		419FFE372AA4A149003FFCF4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				415321FE2EFB0A18005AF7B9 /* popup */,
 				412B0A782EF80BC700DDA9E4 /* theme.js */,
-				412B0A2A2EF7E4EB00DDA9E4 /* popup */,
-				412B0A292EF7E4C700DDA9E4 /* content_scripts */,
-				412B0A282EF7E45F00DDA9E4 /* settings */,
 				412B0A242EF71CD600DDA9E4 /* quickAdminStore.js */,
-				4175FF272BC0244900CD7259 /* node_modules */,
 				41EE55D22B89DBA50034656A /* package-lock.json */,
 				41EE55D02B89DBA50034656A /* package.json */,
 				41EE55D32B89DBA50034656A /* tailwind.css */,
@@ -219,6 +177,9 @@
 				419FFE382AA4A149003FFCF4 /* _locales */,
 				419FFE392AA4A149003FFCF4 /* images */,
 				419FFE3A2AA4A149003FFCF4 /* manifest.json */,
+				415322022EFB0ACB005AF7B9 /* content_scripts */,
+				415322042EFB0B20005AF7B9 /* settings */,
+				415322552EFB0CAC005AF7B9 /* browser-polyfill.min.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -286,11 +247,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				412B0A282EF7E45F00DDA9E4 /* settings */,
-				412B0A292EF7E4C700DDA9E4 /* content_scripts */,
-				412B0A2A2EF7E4EB00DDA9E4 /* popup */,
-			);
 			name = "BrowserBits Extension (iOS)";
 			productName = "Simple Debugging Tools for Web Extension (iOS)";
 			productReference = 419FFE622AA4A149003FFCF4 /* BrowserBits Extension.appex */;
@@ -354,17 +310,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4175040F2BC0244E00CD7259 /* LICENSE in Resources */,
+				415322562EFB0CAC005AF7B9 /* browser-polyfill.min.js in Resources */,
+				415322052EFB0B20005AF7B9 /* settings in Resources */,
+				415322032EFB0ACB005AF7B9 /* content_scripts in Resources */,
+				415321FF2EFB0A18005AF7B9 /* popup in Resources */,
 				41EE55CE2B89D5550034656A /* .gitignore in Resources */,
 				41EE55DA2B89DBA50034656A /* tailwind.css in Resources */,
 				41EE55D82B89DBA50034656A /* package-lock.json in Resources */,
-				4175040D2BC0244E00CD7259 /* browser-polyfill.js in Resources */,
-				4175040E2BC0244E00CD7259 /* browser-polyfill.min.js in Resources */,
 				41EE55D42B89DBA50034656A /* package.json in Resources */,
 				412B0A792EF80BC700DDA9E4 /* theme.js in Resources */,
 				410247F52B948C880051171D /* style.css in Resources */,
 				419FFE832AA4A149003FFCF4 /* images in Resources */,
-				417504112BC0244E00CD7259 /* README.md in Resources */,
 				412B0A272EF71CD600DDA9E4 /* quickAdminStore.js in Resources */,
 				419FFE852AA4A149003FFCF4 /* manifest.json in Resources */,
 				419FFE812AA4A149003FFCF4 /* _locales in Resources */,

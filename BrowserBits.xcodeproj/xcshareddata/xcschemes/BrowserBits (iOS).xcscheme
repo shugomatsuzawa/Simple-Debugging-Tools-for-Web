@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "419FFE432AA4A149003FFCF4"
-               BuildableName = "Simple Debugging Tools for Web.app"
+               BuildableName = "BrowserBits.app"
                BlueprintName = "BrowserBits (iOS)"
                ReferencedContainer = "container:BrowserBits.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "419FFE432AA4A149003FFCF4"
-            BuildableName = "Simple Debugging Tools for Web.app"
+            BuildableName = "BrowserBits.app"
             BlueprintName = "BrowserBits (iOS)"
             ReferencedContainer = "container:BrowserBits.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "419FFE432AA4A149003FFCF4"
-            BuildableName = "Simple Debugging Tools for Web.app"
+            BuildableName = "BrowserBits.app"
             BlueprintName = "BrowserBits (iOS)"
             ReferencedContainer = "container:BrowserBits.xcodeproj">
          </BuildableReference>
