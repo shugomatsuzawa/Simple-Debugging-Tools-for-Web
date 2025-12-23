@@ -33,8 +33,7 @@ ready(() => {
     const fields = {
         name: document.getElementById('dialog-edit-quick-admin-item-name'),
         domains: document.getElementById('dialog-edit-quick-admin-item-target-domain'),
-        path: document.getElementById('dialog-edit-quick-admin-item-path'),
-        custom: document.getElementById('dialog-edit-quick-admin-item-custom')
+        path: document.getElementById('dialog-edit-quick-admin-item-path')
     };
 
     const state = {
@@ -146,7 +145,6 @@ ready(() => {
         fields.name.value = item?.name ?? '';
         fields.domains.value = (item?.domains ?? []).join(', ');
         fields.path.value = item?.path ?? '';
-        fields.custom.value = item?.custom ?? '';
         dialog.showModal();
         fields.name.focus();
     }
@@ -164,7 +162,6 @@ ready(() => {
 
         const name = fields.name.value.trim();
         const path = fields.path.value.trim();
-        const custom = fields.custom.value.trim();
         const domains = parseDomains(fields.domains.value);
 
         if (!name) {
@@ -178,8 +175,7 @@ ready(() => {
             id: state.editingId ?? createQuickAdminId(),
             name,
             domains,
-            path,
-            custom
+            path
         };
 
         try {
@@ -204,9 +200,6 @@ ready(() => {
 
     // 一覧表示用の URL 情報を整形
     function formatDestination(item) {
-        if (item.custom) {
-            return item.custom;
-        }
         if (item.path) {
             return item.path;
         }

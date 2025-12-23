@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410247F52B948C880051171D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 410247F42B948C880051171D /* style.css */; };
 		412B0A272EF71CD600DDA9E4 /* quickAdminStore.js in Resources */ = {isa = PBXBuildFile; fileRef = 412B0A242EF71CD600DDA9E4 /* quickAdminStore.js */; };
+		412B0A792EF80BC700DDA9E4 /* theme.js in Resources */ = {isa = PBXBuildFile; fileRef = 412B0A782EF80BC700DDA9E4 /* theme.js */; };
 		415D79E22DF87063003F246E /* simple-debugging-tools-for-web.icon in Resources */ = {isa = PBXBuildFile; fileRef = 415D79E12DF87063003F246E /* simple-debugging-tools-for-web.icon */; };
 		415D79E62DF8725A003F246E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 415D79E52DF8725A003F246E /* Icon.png */; };
 		4175040D2BC0244E00CD7259 /* browser-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = 4175FDE92BC0244900CD7259 /* browser-polyfill.js */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		410247F42B948C880051171D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		412B0A242EF71CD600DDA9E4 /* quickAdminStore.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = quickAdminStore.js; sourceTree = "<group>"; };
+		412B0A782EF80BC700DDA9E4 /* theme.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = theme.js; sourceTree = "<group>"; };
 		415D79E12DF87063003F246E /* simple-debugging-tools-for-web.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "simple-debugging-tools-for-web.icon"; sourceTree = "<group>"; };
 		415D79E52DF8725A003F246E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4175FDE92BC0244900CD7259 /* browser-polyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.js"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		419FFE372AA4A149003FFCF4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				412B0A782EF80BC700DDA9E4 /* theme.js */,
 				412B0A2A2EF7E4EB00DDA9E4 /* popup */,
 				412B0A292EF7E4C700DDA9E4 /* content_scripts */,
 				412B0A282EF7E45F00DDA9E4 /* settings */,
@@ -358,6 +361,7 @@
 				4175040D2BC0244E00CD7259 /* browser-polyfill.js in Resources */,
 				4175040E2BC0244E00CD7259 /* browser-polyfill.min.js in Resources */,
 				41EE55D42B89DBA50034656A /* package.json in Resources */,
+				412B0A792EF80BC700DDA9E4 /* theme.js in Resources */,
 				410247F52B948C880051171D /* style.css in Resources */,
 				419FFE832AA4A149003FFCF4 /* images in Resources */,
 				417504112BC0244E00CD7259 /* README.md in Resources */,

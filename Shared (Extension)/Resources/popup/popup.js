@@ -209,9 +209,6 @@ async function initQuickAdminSection() {
 
 // ボタンのタイトルに使う表示用 URL
 function formatDestination(item) {
-    if (item.custom) {
-        return item.custom;
-    }
     if (item.path) {
         return item.path;
     }
@@ -262,24 +259,16 @@ function openQuickAdminTab(entry, tab) {
         window.alert('URL を生成できませんでした。設定を確認してください。');
         return;
     }
-    console.debug('targetUrl ', targetUrl)
+    console.debug('targetUrl ', targetUrl);
+    browser.tabs.create({ url: targetUrl });
 }
 
-// path/custom 設定をもとに遷移先 URL を構築
+// path 設定をもとに遷移先 URL を構築
 function buildQuickAdminUrl(entry, tabUrl) {
     if (!tabUrl) {
         return null;
     }
     const current = new URL(tabUrl);
-
-    if (entry.custom && entry.path) {
-        const rewritten = applyCustomRegex(entry.custom, entry.path, current.href);
-        if (rewritten) {
-            return rewritten;
-        }
-        console.warn('カスタム正規表現の適用に失敗しました。', entry.custom);
-        return null;
-    }
 
     const normalizedPath = normalizeRelativePath(entry.path);
     if (!normalizedPath) {
@@ -292,26 +281,6 @@ function buildQuickAdminUrl(entry, tabUrl) {
     return currentBaseUrl + normalizedPath;
 }
 
-// カスタム欄の書式 `/pattern/flags` を解釈し置換
-function applyCustomRegex(ruleString, replacement, currentUrl) {
-    const rule = parseCustomRule(ruleString);
-    if (!rule) {
-        return null;
-    }
-    let regex;
-    try {
-        regex = new RegExp(rule.pattern, rule.flags);
-    } catch (error) {
-        console.error('正規表現の構築に失敗しました。', error);
-        return null;
-    }
-    const result = currentUrl.replace(regex, replacement);
-    if (result === currentUrl) {
-        return null;
-    }
-    return result;
-}
-
 // 相対パスを URL コンストラクタで解決できる形に整える
 function normalizeRelativePath(path) {
     if (!path) {
@@ -321,24 +290,4 @@ function normalizeRelativePath(path) {
         return path;
     }
     return `/${path}`;
-}
-
-function parseCustomRule(value) {
-    if (!value) {
-        return null;
-    }
-    const trimmed = value.trim();
-    if (!trimmed.startsWith('/')) {
-        return null;
-    }
-    const lastSlash = trimmed.lastIndexOf('/');
-    if (lastSlash <= 0) {
-        return null;
-    }
-    const pattern = trimmed.slice(1, lastSlash);
-    const flags = trimmed.slice(lastSlash + 1);
-    return {
-        pattern,
-        flags,
-    };
 }
