@@ -1,6 +1,6 @@
 {
     "extension_name": {
-        "message": "シンプルWebデバッグツール",
+        "message": "BrowserBits",
         "description": "The display name for the extension."
     },
     "extension_description": {
